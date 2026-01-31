@@ -1,0 +1,33 @@
+/* Make the chat input box grey */
+textarea[data-testid="stChatInput"] {
+    background-color: #e0e0e0 !important;
+    color: #000000 !important;
+    border: 2px solid #b0b0b0 !important;
+    border-radius: 8px !important;
+}
+/*
+textarea[data-testid="stChatInputTextArea"]:focus,
+textarea[data-testid="stChatInputTextArea"]:focus-visible {
+    border: 2px solid grey !important; /* or any color you want */
+    /*outline: none !important;
+    box-shadow: none !important;
+}*/
+/* Fix focus red border issue */
+/*textarea[data-testid="stChatInput"]:focus,
+textarea[data-testid="stChatInput"]:focus-visible {
+    border: 2px solid #b0b0b0 !important;
+    outline: none !important;
+}*/
+
+/* Reduce gaps between chat messages */
+.st-chat-message {
+    margin-bottom: 1px !important;
+    padding-bottom: 1px !important;
+}
+.st-chat-message > div {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+.st-chat-message.user, .st-chat-message.assistant {
+    margin-bottom: 1px !important;
+}
